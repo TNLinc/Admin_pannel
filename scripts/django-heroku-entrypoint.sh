@@ -14,4 +14,4 @@ python manage.py createsuperuser --no-input
 
 # Start server
 echo "Starting server"
-gunicorn --log-level DEBUG --bind 0.0.0.0:"$PORT" admin_panel.wsgi:application
+gunicorn --log-level DEBUG --bind 0.0.0.0:"$PORT" admin_panel.heroku_wsgi:application
