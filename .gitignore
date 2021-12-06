@@ -7,9 +7,6 @@ ENV/
 env.bak/
 venv.bak/
 
-# Poetry
-poetry.lock
-
 # Static folder
 static
 
