@@ -1,1 +1,1 @@
-web: chmod 777 scripts/django-entrypoint.sh && ./scripts/django-heroku-entrypoint.sh
+web: chmod 777 scripts/django-heroku-entrypoint.sh && ./scripts/django-heroku-entrypoint.sh
