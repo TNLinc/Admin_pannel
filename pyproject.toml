@@ -49,6 +49,7 @@ disable = [
     "missing-docstring",
     "import-outside-toplevel",
     "invalid-name",
+    "duplicate-code",
 ]
 
 [tool.isort]
