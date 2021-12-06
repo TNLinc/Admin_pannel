@@ -8,6 +8,10 @@ python manage.py collectstatic --noinput
 echo "Apply database migrations"
 python manage.py migrate
 
+# Apply database migrations
+echo "Create superuser"
+python manage.py createsuperuser --no-input
+
 # Start server
 echo "Starting server"
 gunicorn --log-level DEBUG --bind 0.0.0.0:8000 admin_panel.wsgi:application

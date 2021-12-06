@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from vendor.models import Product, Vendor
+from vendor.models import Product, Vendor, VendorColor
 
 
 class ProductInLine(admin.StackedInline):
@@ -12,6 +12,13 @@ class ProductInLine(admin.StackedInline):
 class VendorAdmin(admin.ModelAdmin):
     list_display = ("name", "url")
     search_fields = ("id", "name")
+    inlines = [ProductInLine]
+
+
+@admin.register(VendorColor)
+class VendorColorAdmin(admin.ModelAdmin):
+    list_display = ("name", "color")
+    search_fields = ("id", "name", "color")
     inlines = [ProductInLine]
 
 

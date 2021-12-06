@@ -36,7 +36,7 @@ build-backend = "poetry.core.masonry.api"
 based_on_style = "pep8"
 
 [tool.pylint.'MASTER']
-ignore = ".venv, Dockerfile, poetry.lock, pyproject.toml"
+ignore = ".venv, Dockerfile, poetry.lock, pyproject.toml, vendor/migrations/0002_vendorcolor.py"
 load-plugins = ["pylint_django.checkers.migrations", "pylint_django"]
 django-settings-module = "admin_panel.settings"
 
