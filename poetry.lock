@@ -36,10 +36,7 @@ mypy-extensions = ">=0.4.3"
 pathspec = ">=0.9.0,<1"
 platformdirs = ">=2"
 tomli = ">=0.2.6,<2.0.0"
-typing-extensions = [
-    {version = ">=3.10.0.0", markers = "python_version < \"3.10\""},
-    {version = "!=3.10.0.1", markers = "python_version >= \"3.10\""},
-]
+typing-extensions = ">=3.10.0.0"
 
 [package.extras]
 colorama = ["colorama (>=0.4.3)"]
@@ -539,8 +536,8 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 
 [metadata]
 lock-version = "1.1"
-python-versions = "^3.9.8"
-content-hash = "7524f49fbc192b51222d4c6d0b6bcc0dcf0d1b635a050384056e61f5d4ca131e"
+python-versions = "3.9.8"
+content-hash = "41f76ef19ffe3a116e8fd79c0c86e33ec5c9f9e01cd5b8c41f55eb1a118fd2ba"
 
 [metadata.files]
 asgiref = [
