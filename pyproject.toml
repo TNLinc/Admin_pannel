@@ -6,7 +6,7 @@ authors = ["ilyakochankov <ilyakochankov@yandex.ru>"]
 
 [tool.poetry.dependencies]
 python = "3.9.8"
-Django = "^3.2.7"
+Django = "^3.2.19"
 django-environ = "^0.7.0"
 environs = "^9"
 dj-database-url = "^0.5.0"
